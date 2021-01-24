@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 
 const ListLink = props => (
@@ -8,10 +9,28 @@ const ListLink = props => (
     </li>
 )
 
+const Aside = styled.aside`
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 960px;
+    text-align: right;
+    border-bottom: 2px solid black;
+`;
+
+const Nav = styled.nav`
+    margin: 1rem auto;
+    max-width: 960px;
+    padding: 0 1rem;
+`;
+
+
 export default () => {
     return (
-        <header style={{ marginBottom: `1.5rem` }}>
-            <nav style={{ margin: `3rem auto`, maxWidth: 960, padding: `0 1rem` }}>
+        <header>
+            <Aside>
+                <h5>IN ENGLISH</h5>
+            </Aside>
+            <Nav>
                 <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
                     <h3 style={{ display: `inline` }}>Kaio Gama</h3>
                 </Link>
@@ -19,7 +38,7 @@ export default () => {
                     <ListLink to="https://github.com/kaiogama18">Github</ListLink>
                     <ListLink to="https://www.linkedin.com/in/kaiogama/">Linkedin</ListLink>
                 </ul>
-            </nav>
+            </Nav>
         </header>
     )
 }
