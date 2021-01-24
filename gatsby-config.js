@@ -60,9 +60,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'assets',
-        path: `${__dirname}/src/assets`,
+        path: `${__dirname}/src/pages`,
+        name: "pages"
       }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [],
+      },
     },
     {
       resolve: "gatsby-plugin-netlify-cache",

@@ -1,0 +1,38 @@
+---
+path: "/hello-world"
+date: 2021-01-21T17:12:33.962Z
+title: "Resume"
+---
+
+#### TRABALHO COM DESENVOLVIMENTO WEB E MOBILE DESDE 2015, DESENVOLVI VÁRIOS APLICATIVOS. SEMPRE PREOCUPADO COM A EXPERIÊNCIA DO USUÁRIO E COM O USO DE DADOS MÉTRICAS PARA ALCANÇAR ALTAS TAXAS DE RETENÇÃO.  
+
+##### Experiência 
+
+__Desenvolvedor de Software - Mobile Android e iOS__ <br>
+na Buritech (Julho/2018 - Abril/2019)
+
+-  Tendo trabalhado junto com time de software no desenvolvimento de novas funcionalidades, escalando para modelos mais antigos e atualizando o código base;
+- Ajudei na migração de layout focado na experiência de usuário UX usando a biblioteca Material Design do Google;
+- Tive a oportunidade de implementar criptografia usando Android Keystore, aumentando a segurança dos dados do usuário final;
+
+__Desenvolvedor de Software - Front-end__ <br>
+na Buritech (Abril/2019 - Dezembro/2020)
+
+- Tendo trabalhando no desenvolvimento de sites responsivos usando a tecnologia React, Gatsby e Netxjs
+que nos permite reduzir de forma inteligente a reexecução de partes redundantes permitindo maior
+velocidade de carregamento das páginas;
+
+- A decisão de usar Graphql em vez de REST trouxe extrema flexibilidade e eficiência na recuperação e velocidades de dados;
+
+- O uso de PWA ofereceu uma experiência de uso muito próxima da oferecida pelos mobile apps;
+
+__Desenvolvedor Chatbot__ <br>
+na Bemol (Janeiro/2018 - Julho/2018)
+
+- Desenvolvimento na estrutura de cenários com perfis e casos de uso da organização
+através de Inteligência Artificial e Dialogflow;
+
+- Definir estratégia de melhorias que ajudem o cliente a interagir de maneira mais eficiente,
+gerando uma melhor experiência no atendimento;
+
+- Mapear os possíveis riscos e propor melhoria que tenha como foco a experiência do cliente;
