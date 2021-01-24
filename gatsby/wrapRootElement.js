@@ -19,7 +19,7 @@ export function wrapRootElement({ element }) {
             <meta name="description" content="My personal website portfolio" />
             <meta name="keywords" content="portfolio, machine learning, desenvolvimento de aplicativo, desenvolvimento mobile, web design, desenvolvimento iphone, desenvolvimento android, desenvolvimento de site, tecnologia." />
             <meta name="author" content="Kaio B. Gama" />
-            <link rel="canonical" href="http://kaiogma.com.br/" />
+            <link rel="canonical" href="http://kaiogama.com.br/" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>Kaio Gama | Portfolio</title>
         </Helmet>
