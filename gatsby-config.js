@@ -57,6 +57,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'assets',
+        path: `${__dirname}/src/assets`,
+      }
+    },
+    {
       resolve: "gatsby-plugin-netlify-cache",
       options: {
         cachePublic: true
