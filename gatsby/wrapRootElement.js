@@ -1,12 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import light from '../src/styles/themes/light';
-import { Header } from '../src/components/index';
-
+import { Header, Footer} from '../src/components/index';
 
 const { ThemeProvider } = require('styled-components');
-
-
 
 export function wrapRootElement({ element }) {
     return <ThemeProvider theme={light}  >
@@ -24,6 +21,6 @@ export function wrapRootElement({ element }) {
         <div style={{ margin: `3rem auto`, maxWidth: 960, padding: `0 1rem` }}>
             {element}
         </div>
-        {/* <Footer /> */}
+        <Footer />
     </ThemeProvider>
 }

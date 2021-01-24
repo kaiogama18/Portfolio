@@ -15,12 +15,19 @@ const Aside = styled.aside`
     max-width: 960px;
     text-align: right;
     border-bottom: 2px solid black;
+    h5 {
+        margin : 0.5rem 0;
+    }
 `;
 
 const Nav = styled.nav`
     margin: 1rem auto;
     max-width: 960px;
     padding: 0 1rem;
+
+    h3 {
+        display: inline;
+    }
 `;
 
 
@@ -32,7 +39,7 @@ export default () => {
             </Aside>
             <Nav>
                 <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-                    <h3 style={{ display: `inline` }}>Kaio Gama</h3>
+                    <h3>Kaio Gama</h3>
                 </Link>
                 <ul style={{ listStyle: `none`, float: `right` }}>
                     <ListLink to="https://github.com/kaiogama18">Github</ListLink>
