@@ -1,3 +1,3 @@
 export default {
-    background: "white",
+    body:  "white",
 }

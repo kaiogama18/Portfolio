@@ -15,7 +15,7 @@ const Aside = styled.aside`
     max-width: 960px;
     align-items: center;
     justify-content: flex-end;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid ${props => props.theme.color};
     h5 {
         margin : 0.5rem 0;
     }

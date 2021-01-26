@@ -6,7 +6,7 @@ const Footer = styled.footer`
     padding: 0 1rem;
     max-width: 960px;
     text-align: center;
-    border-top: 2px solid black;
+    border-top: 2px solid ${props => props.theme.color};
     h5 {
         margin : 0.5rem;
     }

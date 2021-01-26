@@ -12,7 +12,7 @@ __Desenvolvedor de Software - Mobile Android e iOS__ <br>
 na Buritech (Julho/2018 - Abril/2019)
 
 -  Tendo trabalhado junto com time de software no desenvolvimento de novas funcionalidades, escalando para modelos mais antigos e atualizando o código base;
-- Ajudei na migração de layout focado na experiência de usuário UX usando a biblioteca Material Design do Google;
+- Trabalhei na migração de layout focado na experiência de usuário UX usando a biblioteca Material Design do Google;
 - Tive a oportunidade de implementar criptografia usando Android Keystore, aumentando a segurança dos dados do usuário final;
 
 __Desenvolvedor de Software - Front-end__ <br>
