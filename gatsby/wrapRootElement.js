@@ -19,7 +19,7 @@ export function wrapRootElement({ element }) {
                 <title>Kaio Gama | Portfolio</title>
             </Helmet>
             <Header />
-            <div style={{ margin: `3rem auto`, maxWidth: 960, padding: `0 1rem` }}>
+            <div style={{ minHeight: `70vh` , margin: `3rem auto`, maxWidth: 960, padding: `0 1rem` }}>
                 {element}
             </div>
             <Footer />

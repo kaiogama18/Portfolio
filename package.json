@@ -29,6 +29,7 @@
     "gatsby-plugin-typography": "^2.11.0",
     "gatsby-source-filesystem": "^2.10.0",
     "gatsby-transformer-remark": "^2.15.0",
+    "lottie-web": "^5.7.6",
     "material-design-icons": "^3.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

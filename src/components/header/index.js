@@ -1,27 +1,26 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import React, { useCallback, useState } from 'react';
-
-// const ListLink = props => (
-//     <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-//         <Link to={props.to}>{props.children}</Link>
-//     </li>
-// )
+import React from 'react';
 
 const Nav = styled.nav`
     margin: 1rem auto;
     max-width: 960px;
     padding: 0 1rem;
+    
 
     h3 {
         display: inline;
+    }
+
+    a {
+        margin-right: 1rem;
     }
 `;
 
 export default () => {
     return (
         <header>
-            
+
             <Nav>
                 <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
                     <h3>Kaio Gama</h3>
