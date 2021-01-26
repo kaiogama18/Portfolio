@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
         text-shadow: none;
         background-image: none;
+        margin-right: 1rem;
     }
    
 `;

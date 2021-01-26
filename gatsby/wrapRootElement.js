@@ -1,17 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-// import light from '../src/styles/themes/light';
-import dark from '../src/styles/themes/dark';
-import { Header, Footer } from '../src/components/index';
 import { GlobalStyle } from '../src/styles/styles';
-
-const { ThemeProvider } = require('styled-components');
+import { Header, Footer, Theme } from '../src/components/index';
 
 export function wrapRootElement({ element }) {
-
     return (
-        <>
-            <ThemeProvider theme={dark}>
+        <Theme>
             <GlobalStyle />
             <Helmet>
                 <meta charSet="utf-8" />
@@ -29,7 +23,6 @@ export function wrapRootElement({ element }) {
                 {element}
             </div>
             <Footer />
-            </ThemeProvider>
-        </>
+        </Theme>
     )
 }
