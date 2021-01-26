@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Kaio Gama`,
-        short_name: `K.Gama`,
+        short_name: `Kaio Gama`,
         description: `My personal website portfolio`,
         lang: `pt-br`,
         start_url: `/`,

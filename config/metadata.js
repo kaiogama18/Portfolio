@@ -1,5 +1,5 @@
 module.exports = {
-    title: `KaioGama`,
+    title: `Kaio Gama`,
     siteUrl: `https://www.kaiogama.com`,
     description: `my personal website portfolio`,
     social: [
@@ -14,7 +14,7 @@ module.exports = {
     ],
     footer: [
         {
-            copyright: 'Copyright 2021 Kaio B. Gama - Todos os direitos reservados'
+            copyright: 'Copyright 2021 Kaio B. Gama'
         }
     ]
 }
