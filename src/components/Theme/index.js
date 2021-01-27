@@ -1,9 +1,10 @@
-import lottie from 'lottie-web';
+// import lottie from 'lottie-web';
 import styled from 'styled-components'
 import dark from '../../styles/themes/dark'
 import light from '../../styles/themes/light'
-import animation from "../../animations/data.json";
-import React, { createRef, useEffect, useState } from 'react'
+// import animation from "../../animations/data.json";
+// import React, { createRef, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 const { ThemeProvider } = require('styled-components')
 
@@ -32,18 +33,18 @@ const Aside = styled.aside`
 export default ({ children }) => {
     const [status, setStatus] = useState(light)
     const [icon, setIcon] = useState('dark_mode')
-    let animationContainer = createRef();
-    // let animObj = null;
 
-    useEffect(() => {
-        lottie.loadAnimation({
-            container: animationContainer.current,
-            animationData: animation,
-            renderer: "svg",
-            loop: true,
-            autoplay: false
-        });
-    }, []);
+    // let animationContainer = createRef();
+    // let animObj = null;
+    // useEffect(() => {
+    //     lottie.loadAnimation({
+    //         container: animationContainer.current,
+    //         animationData: animation,
+    //         renderer: "svg",
+    //         loop: true,
+    //         autoplay: false
+    //     });
+    // }, []);
 
 
     const toggleTheme = () => {
@@ -65,7 +66,6 @@ export default ({ children }) => {
                 {/* <div className="animation-container" ref={animationContainer} /> */}
                 <h5>IN ENGLISH</h5>
                 {/* <button className="material-icons animation" ref={animationContainer} onClick={toggleTheme} /> */}
-
                 <button className="material-icons" onClick={toggleTheme}>
                     {icon}
                 </button>
