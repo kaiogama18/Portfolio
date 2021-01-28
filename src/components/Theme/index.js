@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 
 const { ThemeProvider } = require('styled-components')
 
-const Aside = styled.aside`
+const Aside = styled.article`
     margin: auto;
     display: flex;
     padding: 0 1rem;

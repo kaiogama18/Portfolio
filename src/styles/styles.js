@@ -7,11 +7,8 @@ export const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme.color}
     }
 
-    // * {
-    // box-sizing: border-box;
-    // }
-
     h1, h2, h3, h4, h5, h6, button, a {
+        margin: 0;
         color: ${props => props.theme.color}
     }
 
