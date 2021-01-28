@@ -34,7 +34,7 @@ export default () => {
       loop: true,
       autoplay: true
     });
-  }, []);
+  }, [animationContainer]);
 
   return (
     <NotFound>

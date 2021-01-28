@@ -9,9 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        // Setting a color is optional.
         color: `black`,
-        // Disable the loading spinner.
         showSpinner: false,
       },
     },
@@ -30,7 +28,7 @@ module.exports = {
         lang: `pt-br`,
         start_url: `/`,
         background_color: `#f7f0eb`,
-        theme_color: `#525659`, //#ff954b
+        theme_color: `#525659`,
         display: `standalone`,
         icon: 'src/images/icon.png' //512x512
       },
@@ -60,8 +58,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages"
+        path: `${__dirname}/src/markdown`,
+        name: "markdown"
       }
     },
     {
