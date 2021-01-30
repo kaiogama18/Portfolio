@@ -1,10 +1,12 @@
 ---
 path: "/tapajos-app"
 date: 2021-01-28
-title: "Tapajós - App"
+title: "Tapajós - E-commerce App"
 tags: ["Androird", "Java"]
 ---
 
 
-###### E-commerce de medicamentos com design focado em acessibilidade programado em Java para garantir performance em aparelhos antigos
+Design focado em 
+acessibilidade e 
+aparelhos antigos.
 

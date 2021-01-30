@@ -1,68 +1,58 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from 'styled-components';
-
-const Card = styled.div`
-  width: 350px;
-  height: 200px;
-  padding: 1rem;
-  flex-wrap: wrap;
-  margin: 0.3rem;
-  border-radius: 2px;
-  display: inline-block;
-  border: 2px solid ${props => props.theme.color};
-`;
-
-const Work = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: space-between;
-`;
-
-const Tag = styled.p`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
+import resume from '../data/index.json';
+import { Space, Container } from '../styles/styles';
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <Work>
+    <>
+      <h4> {resume.resume} </h4>
+      <Space height={50} />
+      <h5> {resume.listExperience.title} </h5>
+      <Space height={20} />
       {
-        posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
-          return (
-            <Card key={post.id}>
-              <h5>{post.frontmatter.title}</h5>
-                <div class="mdc-chip-set" role="grid">
-                  {post.frontmatter.tags.map((tag) => (<div class="mdc-chip" role="row">
-                    <div class="mdc-chip__ripple"></div>
-                    <span role="gridcell">
-                      <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                        <span class="mdc-chip__text">{tag}</span>
-                      </span>
-                    </span>
-                  </div>
-                  ))}
-                </div>
-                <p>{post.excerpt}</p>
-            </Card>
-          )
-        })
+        resume.listExperience.experience.map((xp) => (
+          <div key={xp.company.toString()}>
+            <p>
+              <strong> {xp.title}</strong> <br />
+              {xp.company}
+            </p>
+            <ul>
+              {
+                xp.listDescriptions.map((desc) => (
+                  <li key={desc.description} >{desc.description}</li>
+                ))
+              }
+            </ul>
+          </div>
+        ))
       }
-    </Work>
+      <Space height={15} />
+      <h5> Meus trabalhos </h5>
+      <Space height={15} />
+      <Container>
+        {
+          posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
+            return (
+              <div className="flag" key={post.frontmatter.title.toString()}>
+                <div className="flag__title">
+                  <h5>{post.frontmatter.title}</h5>
+                </div>
+                <div className="flag__content">
+                  <p>{post.excerpt}</p>
+                </div>
+              </div>
+
+
+            )
+          })
+        }
+      </Container>
+    </>
   )
 
-  // return posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
-  //   return (
-  //     <Card key={post.id}>
-  //       <h4>{post.frontmatter.title}</h4>
-  //       <p>{post.frontmatter.tags}</p>
-  //       <p>{post.excerpt}</p>
-  //     </Card>
-  //   )
-  // })
 
 }
 export const pageQuery = graphql`
@@ -70,7 +60,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 60)
+          excerpt(pruneLength: 100)
           id
           frontmatter {
             title
@@ -82,3 +72,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+  

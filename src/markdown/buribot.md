@@ -5,4 +5,6 @@ title: "Buribot"
 tags: ["Ruby", "Dialogflow", "Rails"]
 ---
 
-###### Bot em Ruby focado em venda de produtos utilizando Dialogflow no treino e coleta de dados na estruturação de perfis de usuários 
+Chatbots para vendas
+utilizando Dialogflow 
+e Ruby.

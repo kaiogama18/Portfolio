@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
@@ -18,4 +19,59 @@ export const GlobalStyle = createGlobalStyle`
     }
    
 `;
+
+export const Space = styled.div`
+  height: ${({ height }) => height}px;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .flag {
+    width: 290px;
+    height: 15vh;
+    display: grid;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: var(--flag-gap, 1em);
+    border: 2px solid ${props => props.theme.color};
+    grid-template-rows: repeat(3, minmax(min-content, max-content)) 1fr;
+    grid-template-areas:
+      'signifier .'
+      'signifier title'
+      'signifier content'
+      '. content';
+  }
+  
+  .flag__title {
+    margin-bottom: 0.5rem;
+    grid-area: title;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    
+    &:empty {
+      grid-column: 1;
+      grid-row: 2;
+    
+      &:after {
+        content: "x";
+        visibility: hidden;
+      }
+      
+      ~ .flag__content {
+        grid-row-start: 2;
+      }
+    }
+  }
+
+  .flag__content {
+    grid-area: content;
+  }
+`;
+
+
 
