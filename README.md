@@ -8,6 +8,6 @@
   My Porfolio -- Kaio B. Gama
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+MEU NOME E KAIO E TRABALHO COM DESENVOLVIMENTO WEB E MOBILE DESDE 2015, DESENVOLVI VÁRIOS APLICATIVOS. SEMPRE PREOCUPADO COM A EXPERIÊNCIA DO USUÁRIO E COM O USO DE DADOS MÉTRICAS PARA ALCANÇAR ALTAS TAXAS DE RETENÇÃO.
 
 ## 💫 Test
