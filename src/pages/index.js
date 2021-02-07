@@ -1,17 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
 import resume from '../data/index.json';
-import { Space, Container } from '../styles/styles';
+import SEO from "../components/seo";
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
     <>
+      <SEO />
+      
       <h4> {resume.resume} </h4>
-      <Space height={50} />
       <h5> {resume.listExperience.title} </h5>
-      <Space height={20} />
       {
         resume.listExperience.experience.map((xp) => (
           <div key={xp.company.toString()}>
@@ -29,10 +29,8 @@ export default function Index({ data }) {
           </div>
         ))
       }
-      <Space height={15} />
       <h5> Meus trabalhos </h5>
-      <Space height={15} />
-      <Container>
+      <>
         {
           posts.filter(post => post.node.frontmatter.title.length > 0).map(({ node: post }) => {
             return (
@@ -49,7 +47,7 @@ export default function Index({ data }) {
             )
           })
         }
-      </Container>
+      </>
     </>
   )
 
@@ -73,4 +71,3 @@ export const pageQuery = graphql`
   }
 `
 
-  

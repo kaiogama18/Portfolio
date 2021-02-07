@@ -1,7 +1,10 @@
 module.exports = {
     title: `Kaio Gama`,
+    titleTemplate: "%s | Software Engineer",
     siteUrl: `https://www.kaiogama.com`,
-    description: `my personal website portfolio`,
+    description: `I’m Kaio, a software engineer living Manaus, Brazil. I’m currently helping to build digital products & services at Buritech.`,
+    image: "/images/icon.jpg",
+    twitterUsername: "@kaioedu18",
     social: [
         {
             name: 'github',

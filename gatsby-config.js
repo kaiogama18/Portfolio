@@ -13,18 +13,18 @@ module.exports = {
         showSpinner: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Kaio Gama`,
         short_name: `Kaio Gama`,
-        description: `My personal website portfolio`,
+        description: `I’m Kaio, a software engineer living Manaus, Brazil. I’m currently helping to build digital products & services at Buritech.`,
         lang: `pt-br`,
         start_url: `/`,
         background_color: `#f7f0eb`,
@@ -42,12 +42,12 @@ module.exports = {
         siteUrl: `https://www.kaiogama.com`,
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        displayName: process.env.NODE_ENV != 'production'
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-styled-components`,
+    //   options: {
+    //     displayName: process.env.NODE_ENV != 'production'
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {

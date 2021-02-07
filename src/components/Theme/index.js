@@ -1,56 +1,41 @@
-import styled from 'styled-components'
-import dark from '../../styles/themes/dark'
-import light from '../../styles/themes/light'
 import React, { useState } from 'react'
+import { MoonIcon, SunIcon, ExternalLinkIcon } from '@chakra-ui/icons'
+import { Box, Flex, Heading, HStack, IconButton, Link, Spacer } from '@chakra-ui/react'
 
-const { ThemeProvider } = require('styled-components')
-
-const Aside = styled.article`
-    margin: auto;
-    display: flex;
-    padding: 0 1rem;
-    max-width: 960px;
-    align-items: center;
-    justify-content: flex-end;
-    border-bottom: 2px solid ${props => props.theme.color};
-    h5 {
-        margin : 0.5rem 0;
-    }
-    button {
-        margin : 0.5rem ;
-        border: 0;
-        background-color: transparent;
-    }
-
-    .animation {
-        width: 5%;
-    }
-`;
 
 export default ({ children }) => {
-    const [status, setStatus] = useState(light)
-    const [icon, setIcon] = useState('dark_mode')
+    const [status, setStatus] = useState("light")
 
     const toggleTheme = () => {
-        if (status === light) {
-            setStatus(dark)
-            setIcon('light_mode')
+        if (status === "light") {
+            setStatus("dark")
         } else {
-            setStatus(light)
-            setIcon('dark_mode')
+            setStatus("light")
         }
     }
 
     return (
-        <ThemeProvider theme={status}>
-            <Aside>
-                <h5>IN ENGLISH</h5>
-                <button className="material-icons" onClick={toggleTheme}>
-                    {icon}
-                </button>
-            </Aside>
+        < >
+            <Box p="4" bg="red.400">
+                <Flex align="center">
+                    <Spacer />
+                    <HStack>
+                        <Link href="https://drive.google.com/file/d/1o9y4RrzdHgCP2R4puVBEYJCRxqnZyJH0/view?usp=sharing" isExternal>
+                            <Heading as="h6" size="xs"> Resume <ExternalLinkIcon mx="2px" /></Heading>
+                            {/* <Heading size="md" as="h6">IN ENGLISH</Heading> */}
+                        </Link>
+                        <IconButton
+                            onClick={toggleTheme}
+                            aria-label="Search database"
+                            icon={
+                                status === "dark" ? <SunIcon /> : <MoonIcon />
+                            }
+                        />
+                    </HStack>
+                </Flex>
+            </Box>
             {children}
-        </ThemeProvider>
+        </>
     )
 }
 

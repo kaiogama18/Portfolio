@@ -14,8 +14,13 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.5",
+    "@chakra-ui/react": "^1.3.2",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
     "@rehooks/window-size": "^1.0.2",
     "babel-plugin-styled-components": "^1.12.0",
+    "framer-motion": "^3.3.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-canonical-urls": "^2.9.0",
     "gatsby-plugin-manifest": "^2.11.0",
@@ -38,7 +43,8 @@
     "react-typography": "^0.16.19",
     "styled-components": "^5.2.1",
     "typography": "^0.16.19",
-    "typography-theme-fairy-gates": "^0.16.19"
+    "typography-theme-fairy-gates": "^0.16.19",
+    "typography-theme-grand-view": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "2.2.1"
