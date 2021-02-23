@@ -1,7 +1,11 @@
 module.exports = {
-    title: `Kaio Gama`,
+
+    title: "Kaio Gama",
     siteUrl: `https://www.kaiogama.com`,
+    titleTemplate: "%s | Msc",
     description: `my personal website portfolio`,
+    image: "/images/icon.jpg",
+    twitterUsername: "@kaioedu18",
     social: [
         {
             name: "github",

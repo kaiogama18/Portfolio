@@ -1,4 +1,4 @@
-const siteMetadata = require("./config/metadata")
+const siteMetadata = require('./config/metadata')
 
 module.exports = {
     siteMetadata,

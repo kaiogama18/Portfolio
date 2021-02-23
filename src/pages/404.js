@@ -3,6 +3,7 @@ import lottie from 'lottie-web'
 import React, { createRef, useEffect } from 'react'
 import styled from 'styled-components'
 import animation from '../animations/404.json'
+import SEO from '../components/seo'
 
 const NotFound = styled.div`
     display: flex;
@@ -36,14 +37,19 @@ export default () => {
     }, [animationContainer])
 
     return (
-        <NotFound>
-            <Animation
-                ref={animationContainer}
-                alt="Img in svg Pixels of 404 error"
-            />
-            <h3>Página não encontrada</h3>
-            <p>Parece que a página que você estava procurando não existe.</p>
-            <ListLink to="/">VOLTAR PARA PÁGINA INICIAL</ListLink>
-        </NotFound>
+        <>
+            <SEO />
+            <NotFound>
+                <Animation
+                    ref={animationContainer}
+                    alt="Img in svg Pixels of 404 error"
+                />
+                <h3>Página não encontrada</h3>
+                <p>
+                    Parece que a página que você estava procurando não existe.
+                </p>
+                <ListLink to="/">VOLTAR PARA PÁGINA INICIAL</ListLink>
+            </NotFound>
+        </>
     )
 }

@@ -1,16 +1,17 @@
 import { graphql } from 'gatsby'
 import React from 'react'
+import SEO from '../components/seo'
 import resume from '../data/index.json'
-import { Container, Space } from '../styles/styles'
-
+import { Space } from '../styles/styles'
 export default function Index({ data }) {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
         <>
-            <h4> {resume.resume} </h4>
+          <SEO />
+            <h2> {resume.resume} </h2>
             {/* <Space height={50} /> */}
-            <h5> {resume.listExperience.title} </h5>
+            <h3> {resume.listExperience.title} </h3>
             {/* <Space height={20} /> */}
             {resume.listExperience.experience.map(xp => (
                 <div key={xp.company.toString()}>
@@ -26,7 +27,7 @@ export default function Index({ data }) {
                 </div>
             ))}
             <Space height={15} />
-            <h5> Meus trabalhos </h5>
+            {/* <h3> Meus trabalhos </h3>
             <Space height={15} />
             <Container>
                 {posts
@@ -46,7 +47,7 @@ export default function Index({ data }) {
                             </div>
                         )
                     })}
-            </Container>
+            </Container> */}
         </>
     )
 }
