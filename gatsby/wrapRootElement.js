@@ -6,7 +6,7 @@ import { GlobalStyle } from "../src/styles/styles"
 
 const Main = styled.div`
     display: flex;
-    minheight: 70vh;
+    min-height: 70vh;
     padding: 0 1rem;
     max-width: 960px;
     margin: 3rem auto;
