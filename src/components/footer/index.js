@@ -7,7 +7,8 @@ const Footer = styled.footer`
     max-width: 960px;
     text-align: center;
     border-top: 2px solid ${props => props.theme.color};
-    h5 {
+
+    p {
         margin: 0.5rem;
     }
 `
@@ -15,7 +16,7 @@ const Footer = styled.footer`
 export default () => {
     return (
         <Footer>
-            <h5>Copyright 2021 Kaio B. Gama - Todos os direitos reservados</h5>
+            <p>Copyright 2021 Kaio B. Gama - Todos os direitos reservados</p>
         </Footer>
     )
 }

@@ -5,7 +5,7 @@ import { GlobalStyle } from '../src/styles/styles'
 
 const Layout = styled.body`
     max-width: 960px;
-    margin: 1rem auto;
+    margin: 1rem auto 0;
 
     @media screen and (max-width: 600px) {
         margin: 2rem;

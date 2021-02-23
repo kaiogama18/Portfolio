@@ -44,7 +44,7 @@ export default ({ children }) => {
     return (
         <ThemeProvider theme={status}>
             <Aside>
-                <h5>IN ENGLISH</h5>
+                <p>IN ENGLISH</p>
                 <button className="material-icons" onClick={toggleTheme}>
                     {icon}
                 </button>
