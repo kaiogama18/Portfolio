@@ -18,6 +18,10 @@ export const GlobalStyle = createGlobalStyle`
         background-image: none;
     }
 
+    li {
+        margin: 10px 0;
+    }
+
 `
 
 export const Space = styled.div`

@@ -4,38 +4,41 @@
         "title": "Experiência",
         "experience": [
             {
-                "title": "Desenvolvedor de Software - Mobile Android e iOS",
-                "company": "na Buritech (Julho/2018 - Abril/2019)",
+                "title": "Desenvolvedor Front-End",
+                "company": "Buritech | Manaus, AM | Abril 2019 - Dezembro 2020",
+                "descriptions": "Tendo trabalhando no desenvolvimento de sites responsivos, compatíveis entre navegadores e em conformidade com acessibilidade usando a tecnologia Angular, React e Vue.js seguindo os princípios de web design e monitorando o desempenho do site e corrigindo problemas relacionados ao front-end.",
                 "listDescriptions": [
                     {
-                        "description": "Tendo trabalhado junto com time de software no desenvolvimento de novas funcionalidades, escalando para modelos mais antigos e atualizando o código base;"
+                        "description": "Tendo trabalhado junto com time de software no desenvolvimento de novas funcionalidades, testar e fornecer suporte, escalando para modelos mais antigos e atualizando o código base;"
+                    },
+                    {
+                        "description": "Adaptando aplicativos de e-commerce existentes para aplicativos híbridos em React Native e aplicando segurança Android Keystore;"
                     },
                     {
                         "description": "Trabalhei na migração de layout focado na experiência de usuário UX usando a biblioteca Material Design do Google;"
-                    },
-                    {
-                        "description": "Tive a oportunidade de implementar criptografia usando Android Keystore, aumentando a segurança dos dados do usuário final;"
                     }
                 ]
             },
             {
-                "title": "Desenvolvedor de Software - Front-end",
-                "company": "na Buritech (Abril/2019 - Dezembro/2020)",
+                "title": "Desenvolvedor Mobile",
+                "company": "Buritech | Manaus, AM | Julho 2018 - Abril 2019",
+                "descriptions": "Mantendo e adicionando novas funcionalidades em aplicações nativas (Android e iOS) e híbridas (React Native).",
                 "listDescriptions": [
                     {
-                        "description": "Tendo trabalhando no desenvolvimento de sites responsivos usando a tecnologia React, Gatsby e Netxjs que nos permite reduzir de forma inteligente a reexecução de partes redundantes permitindo maior velocidade de carregamento das páginas;"
+                        "description": "Tendo trabalhado junto com time de software no desenvolvimento de novas funcionalidades, testar e fornecer suporte, escalando para modelos mais antigos e atualizando o código base;"
                     },
                     {
-                        "description": "A decisão de usar Graphql em vez de REST trouxe extrema flexibilidade e eficiência na recuperação e velocidades de dados;"
+                        "description": "Adaptando aplicativos de e-commerce existentes para aplicativos híbridos em React Native e aplicando segurança Android Keystore;"
                     },
                     {
-                        "description": "O uso de PWA ofereceu uma experiência de uso muito próxima da oferecida pelos mobile apps;"
+                        "description": "Trabalhei na migração de layout focado na experiência de usuário UX usando a biblioteca Material Design do Google;"
                     }
                 ]
             },
             {
                 "title": "Desenvolvedor Chatbot",
-                "company": "na Bemol (Janeiro/2018 - Julho/2018)",
+                "company": "Buritech | Manaus, AM | Janeiro 2018 - Julho 2019",
+                "descriptions": "Projetar Chatbot, mensagens, SMS e assistentes virtuais contextuais com foco na escalabilidade capaz de atender aos objetivos de negócios.",
                 "listDescriptions": [
                     {
                         "description": "Desenvolvimento na estrutura de cenários com perfis e casos de uso da organização através de Inteligência Artificial e Dialogflow;"
@@ -45,6 +48,9 @@
                     },
                     {
                         "description": "Mapear os possíveis riscos e propor melhoria que tenha como foco a experiência do cliente;"
+                    },
+                    {
+                        "description": "Fornecimento de ofertas em tempo real, descontos sazonais, incentivos de fidelidade e muitos outros cupons de presente e outras coisas promocionais;"
                     }
                 ]
             }

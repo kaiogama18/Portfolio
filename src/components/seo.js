@@ -72,6 +72,11 @@ const SEO = ({ title, description, image, article }) => {
                 rel="stylesheet"
                 href="https://fonts.googleapis.com/icon?family=Material+Icons"
             />
+
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1"
+            />
         </Helmet>
     )
 }

@@ -8,17 +8,20 @@ export default function Index({ data }) {
 
     return (
         <>
-          <SEO />
+            <SEO />
             <h2> {resume.resume} </h2>
-            {/* <Space height={50} /> */}
+            <Space height={20} />
             <h3> {resume.listExperience.title} </h3>
-            {/* <Space height={20} /> */}
             {resume.listExperience.experience.map(xp => (
                 <div key={xp.company.toString()}>
+                    <Space height={10} />
+
                     <p>
                         <strong> {xp.title}</strong> <br />
                         {xp.company}
                     </p>
+                    <p>{xp.descriptions}</p>
+                    <Space height={10} />
                     <ul>
                         {xp.listDescriptions.map(desc => (
                             <li key={desc.description}>{desc.description}</li>
@@ -26,7 +29,6 @@ export default function Index({ data }) {
                     </ul>
                 </div>
             ))}
-            <Space height={15} />
             {/* <h3> Meus trabalhos </h3>
             <Space height={15} />
             <Container>
