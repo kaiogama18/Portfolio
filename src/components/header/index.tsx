@@ -12,11 +12,13 @@ const Nav = styled.nav`
         padding: 0 10px;
         font-weight: 600;
         text-decoration: none;
-        color: ${props => props.theme.linkColor};
+        color: ${(props: { theme: { colors: any } }) =>
+            props.theme.colors.link};
 
         &:hover {
             content: '';
-            color: ${props => props.theme.linkColorHover};
+            color: ${(props: { theme: { colors: any } }) =>
+                props.theme.colors.hover.link};
         }
     }
 `
@@ -44,11 +46,16 @@ const Header = ({ title }) => {
                 </Link>
             </Flex>
             <Flex flex={1} justify="flex-end">
-                {social.map(link => (
-                    <a href={link.url} key={link.name}>
-                        {link.name}
-                    </a>
-                ))}
+                {social.map(
+                    (link: {
+                        url: string | undefined
+                        name: {} | null | undefined
+                    }) => (
+                        <a href={link.url} key={link.name}>
+                            {link.name}
+                        </a>
+                    )
+                )}
             </Flex>
         </Nav>
     )

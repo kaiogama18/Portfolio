@@ -2,11 +2,9 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import SEO from '../components/seo'
 import resume from '../data/index.json'
-import { Space } from '../styles/styled'
+import { Space } from '../styles/global'
 
-export default function Index({ data }) {
-    const { edges: posts } = data.allMarkdownRemark
-
+const Index: React.FC = () => {
     return (
         <>
             <SEO />
@@ -54,6 +52,9 @@ export default function Index({ data }) {
         </>
     )
 }
+
+export default Index
+
 export const pageQuery = graphql`
     query IndexQuery {
         allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {

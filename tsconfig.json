@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        // "types": ["jest"],
+
+        "module": "commonjs",
+        "target": "es6",
+        "jsx": "preserve",
+        "lib": ["dom", "dom.iterable"],
+        "strict": true,
+        "noEmit": true,
+
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "removeComments": false,
+
+        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true
+    },
+    "include": ["**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"],
+    "files": [
+      "src/styles/styled.d.ts"
+    ]
+}
