@@ -5,8 +5,6 @@ title: "Tapajós - E-commerce App"
 tags: ["Androird", "Java"]
 ---
 
-
-Design focado em 
-acessibilidade e 
+Design focado em
+acessibilidade e
 aparelhos antigos.
-

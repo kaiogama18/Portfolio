@@ -1,16 +1,15 @@
-import styled, { createGlobalStyle } from "styled-components"
-
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        // margin: 0;
+        margin: 0;
         background-color: ${props => props.theme.body};
         color: ${props => props.theme.color};
         font-family:'Roboto Mono';
     }
 
     h1, h2, h3, h4, h5, h6, button, a {
-        margin: 0;
+        /* margin: 0; */
         color: ${props => props.theme.color}
     }
 
@@ -41,10 +40,10 @@ export const Container = styled.div`
         border: 2px solid ${props => props.theme.color};
         grid-template-rows: repeat(3, minmax(min-content, max-content)) 1fr;
         grid-template-areas:
-            "signifier ."
-            "signifier title"
-            "signifier content"
-            ". content";
+            'signifier .'
+            'signifier title'
+            'signifier content'
+            '. content';
     }
 
     .flag__title {
@@ -59,7 +58,7 @@ export const Container = styled.div`
             grid-row: 2;
 
             &:after {
-                content: "x";
+                content: 'x';
                 visibility: hidden;
             }
 

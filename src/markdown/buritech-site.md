@@ -6,6 +6,5 @@ tags: ["React", "Gatsby", "PWA"]
 ---
 
 Site comercial com
-o intuito de angariar 
+o intuito de angariar
 colaboradores.
-

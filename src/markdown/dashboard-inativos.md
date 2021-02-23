@@ -5,8 +5,6 @@ title: "Inativos - Dashboard"
 tags: ["React", "Nextjs", "PWA", "Python", "Machine Learning"]
 ---
 
-
-
-Visualização de dados 
-para prover suporte na 
+Visualização de dados
+para prover suporte na
 área de gestão.

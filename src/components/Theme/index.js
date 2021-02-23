@@ -1,7 +1,7 @@
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import dark from '../../styles/themes/dark'
 import light from '../../styles/themes/light'
-import React, { useState } from 'react'
 
 const { ThemeProvider } = require('styled-components')
 
@@ -14,10 +14,10 @@ const Aside = styled.article`
     justify-content: flex-end;
     border-bottom: 2px solid ${props => props.theme.color};
     h5 {
-        margin : 0.5rem 0;
+        margin: 0.5rem 0;
     }
     button {
-        margin : 0.5rem ;
+        margin: 0.5rem;
         border: 0;
         background-color: transparent;
     }
@@ -25,12 +25,11 @@ const Aside = styled.article`
     .animation {
         width: 5%;
     }
-`;
+`
 
 export default ({ children }) => {
     const [status, setStatus] = useState(light)
     const [icon, setIcon] = useState('dark_mode')
-    
 
     const toggleTheme = () => {
         if (status === light) {
@@ -41,7 +40,6 @@ export default ({ children }) => {
             setIcon('dark_mode')
         }
     }
-
 
     return (
         <ThemeProvider theme={status}>
@@ -55,9 +53,3 @@ export default ({ children }) => {
         </ThemeProvider>
     )
 }
-
-
-
-
-
-

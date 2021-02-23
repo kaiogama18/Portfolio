@@ -5,6 +5,6 @@ title: "Hunt Consult - App"
 tags: ["Androird", "Java", "IOS", "Swift"]
 ---
 
-Sistema de recrutamento 
-onde o usuário faz 
+Sistema de recrutamento
+onde o usuário faz
 todo processo no app.

@@ -1,53 +1,53 @@
 {
-  "resume": "Tenho 23 anos e resido em Manaus, Amazonas trabalho com desenvolvimento web e mobile desde 2015, participei de projetos com grandes varejistas de Manaus em diferentes áreas: React WebApps, Chatbot, aplicativos móveis nativo e híbrido focando na experiência do usuário.",
-  "listExperience": {
-    "title": "Experiência",
-    "experience": [
-      {
-        "title": "Desenvolvedor de Software - Mobile Android e iOS",
-        "company": "na Buritech (Julho/2018 - Abril/2019)",
-        "listDescriptions": [
-          {
-            "description": "Tendo trabalhado junto com time de software no desenvolvimento de novas funcionalidades, escalando para modelos mais antigos e atualizando o código base;"
-          },
-          {
-            "description": "Trabalhei na migração de layout focado na experiência de usuário UX usando a biblioteca Material Design do Google;"
-          },
-          {
-            "description": "Tive a oportunidade de implementar criptografia usando Android Keystore, aumentando a segurança dos dados do usuário final;"
-          }
+    "resume": "Tenho 23 anos e resido em Manaus, Amazonas trabalho com desenvolvimento web e mobile desde 2015, participei de projetos com grandes varejistas de Manaus em diferentes áreas: React WebApps, Chatbot, aplicativos móveis nativo e híbrido focando na experiência do usuário.",
+    "listExperience": {
+        "title": "Experiência",
+        "experience": [
+            {
+                "title": "Desenvolvedor de Software - Mobile Android e iOS",
+                "company": "na Buritech (Julho/2018 - Abril/2019)",
+                "listDescriptions": [
+                    {
+                        "description": "Tendo trabalhado junto com time de software no desenvolvimento de novas funcionalidades, escalando para modelos mais antigos e atualizando o código base;"
+                    },
+                    {
+                        "description": "Trabalhei na migração de layout focado na experiência de usuário UX usando a biblioteca Material Design do Google;"
+                    },
+                    {
+                        "description": "Tive a oportunidade de implementar criptografia usando Android Keystore, aumentando a segurança dos dados do usuário final;"
+                    }
+                ]
+            },
+            {
+                "title": "Desenvolvedor de Software - Front-end",
+                "company": "na Buritech (Abril/2019 - Dezembro/2020)",
+                "listDescriptions": [
+                    {
+                        "description": "Tendo trabalhando no desenvolvimento de sites responsivos usando a tecnologia React, Gatsby e Netxjs que nos permite reduzir de forma inteligente a reexecução de partes redundantes permitindo maior velocidade de carregamento das páginas;"
+                    },
+                    {
+                        "description": "A decisão de usar Graphql em vez de REST trouxe extrema flexibilidade e eficiência na recuperação e velocidades de dados;"
+                    },
+                    {
+                        "description": "O uso de PWA ofereceu uma experiência de uso muito próxima da oferecida pelos mobile apps;"
+                    }
+                ]
+            },
+            {
+                "title": "Desenvolvedor Chatbot",
+                "company": "na Bemol (Janeiro/2018 - Julho/2018)",
+                "listDescriptions": [
+                    {
+                        "description": "Desenvolvimento na estrutura de cenários com perfis e casos de uso da organização através de Inteligência Artificial e Dialogflow;"
+                    },
+                    {
+                        "description": "Definir estratégia de melhorias que ajudem o cliente a interagir de maneira mais eficiente, gerando uma melhor experiência no atendimento;"
+                    },
+                    {
+                        "description": "Mapear os possíveis riscos e propor melhoria que tenha como foco a experiência do cliente;"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "title": "Desenvolvedor de Software - Front-end",
-        "company": "na Buritech (Abril/2019 - Dezembro/2020)",
-        "listDescriptions": [
-          {
-            "description": "Tendo trabalhando no desenvolvimento de sites responsivos usando a tecnologia React, Gatsby e Netxjs que nos permite reduzir de forma inteligente a reexecução de partes redundantes permitindo maior velocidade de carregamento das páginas;"
-          },
-          {
-            "description": "A decisão de usar Graphql em vez de REST trouxe extrema flexibilidade e eficiência na recuperação e velocidades de dados;"
-          },
-          {
-            "description": "O uso de PWA ofereceu uma experiência de uso muito próxima da oferecida pelos mobile apps;"
-          }
-        ]
-      },
-      {
-        "title": "Desenvolvedor Chatbot",
-        "company": "na Bemol (Janeiro/2018 - Julho/2018)",
-        "listDescriptions": [
-          {
-            "description": "Desenvolvimento na estrutura de cenários com perfis e casos de uso da organização através de Inteligência Artificial e Dialogflow;"
-          },
-          {
-            "description": "Definir estratégia de melhorias que ajudem o cliente a interagir de maneira mais eficiente, gerando uma melhor experiência no atendimento;"
-          },
-          {
-            "description": "Mapear os possíveis riscos e propor melhoria que tenha como foco a experiência do cliente;"
-          }
-        ]
-      }
-    ]
-  }
+    }
 }

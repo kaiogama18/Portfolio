@@ -4,17 +4,17 @@ module.exports = {
     description: `my personal website portfolio`,
     social: [
         {
-            name: 'github',
-            url: 'https://github.com/kaiogama18'
+            name: "github",
+            url: "https://github.com/kaiogama18",
         },
         {
-            name: 'linkedin',
-            url: 'https://www.linkedin.com/in/kaiogama/'
-        }
+            name: "linkedin",
+            url: "https://www.linkedin.com/in/kaiogama/",
+        },
     ],
     footer: [
         {
-            copyright: 'Copyright 2021 Kaio B. Gama'
-        }
-    ]
+            copyright: "Copyright 2021 Kaio B. Gama",
+        },
+    ],
 }

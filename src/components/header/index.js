@@ -1,12 +1,11 @@
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import React from 'react';
+import { Link } from 'gatsby'
+import React from 'react'
+import styled from 'styled-components'
 
 const Nav = styled.nav`
     margin: 1rem auto;
     max-width: 960px;
     padding: 0 1rem;
-    
 
     h3 {
         display: inline;
@@ -15,14 +14,16 @@ const Nav = styled.nav`
     a {
         margin-right: 1rem;
     }
-`;
+`
 
 export default () => {
     return (
         <header>
-
             <Nav>
-                <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+                <Link
+                    to="/"
+                    style={{ textShadow: `none`, backgroundImage: `none` }}
+                >
                     <h3>Kaio Gama</h3>
                 </Link>
                 <ul style={{ listStyle: `none`, float: `right` }}>
