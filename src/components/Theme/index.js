@@ -30,6 +30,7 @@ const Aside = styled.article`
 export default ({ children }) => {
     const [status, setStatus] = useState(light)
     const [icon, setIcon] = useState('dark_mode')
+    
 
     const toggleTheme = () => {
         if (status === light) {
@@ -40,6 +41,7 @@ export default ({ children }) => {
             setIcon('dark_mode')
         }
     }
+
 
     return (
         <ThemeProvider theme={status}>
