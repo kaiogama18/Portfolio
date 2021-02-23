@@ -2,7 +2,8 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import SEO from '../components/seo'
 import resume from '../data/index.json'
-import { Space } from '../styles/styles'
+import { Space } from '../styles/styled'
+
 export default function Index({ data }) {
     const { edges: posts } = data.allMarkdownRemark
 

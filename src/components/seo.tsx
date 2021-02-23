@@ -32,7 +32,7 @@ const SEO = ({ title, description, image, article }) => {
         >
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
-            <meta charset="UTF-8" />
+            {/* <meta charset="UTF-8" /> */}
             <meta name="robots" content="index, follow" />
 
             {seo.url && <meta property="og:url" content={seo.url} />}

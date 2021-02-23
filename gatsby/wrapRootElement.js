@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Footer, Header, Theme } from '../src/components/index'
-import { GlobalStyle, Space } from '../src/styles/styles'
+import { GlobalStyle, Space } from '../src/styles/styled'
 
 const Layout = styled.body`
     max-width: 960px;
