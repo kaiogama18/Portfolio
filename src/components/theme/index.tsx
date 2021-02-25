@@ -1,10 +1,10 @@
-import React, { ReactChild, ReactFragment, ReactPortal, useState } from 'react'
-import styled from 'styled-components'
+import React, { ReactChild, ReactFragment, ReactPortal } from 'react'
+import styled, { DefaultTheme, ThemeProvider } from 'styled-components'
 import { Footer, Header } from '..'
 import { GlobalStyle } from '../../styles/global'
 import dark from '../../styles/themes/dark'
 import light from '../../styles/themes/light'
-const { ThemeProvider } = require('styled-components')
+import usePersistedState from '../../utils/usePersistedState'
 
 const Layout = styled.body`
     max-width: 960px;
@@ -28,7 +28,7 @@ interface AuxProps {
 }
 
 const Theme: React.FC = ({ children }: AuxProps) => {
-    const [theme, setTheme] = useState(light)
+    const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light)
 
     const toggleTheme = () => {
         setTheme(theme.title == 'light' ? dark : light)
@@ -40,7 +40,6 @@ const Theme: React.FC = ({ children }: AuxProps) => {
             <Layout>
                 <Header toggleTheme={toggleTheme} />
                 {children}
-                {/* <Space height={30} /> */}
                 <Footer />
             </Layout>
         </ThemeProvider>
