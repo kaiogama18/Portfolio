@@ -1,7 +1,25 @@
-import { graphql, Link, useStaticQuery } from 'gatsby'
-import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
+
+interface IndexPageProps {
+    data: {
+        site: {
+            siteMetadata: {
+                defaultTitle: string
+                social: {
+                    name: string
+                    url: string
+                }
+            }
+        }
+    }
+}
+
+export type FlexProps = {
+    flex: keyof number
+    justify?:keyof  string
+}
 
 const Nav = styled.nav`
     display: flex;
@@ -23,58 +41,31 @@ const Nav = styled.nav`
     }
 `
 
-const Flex = styled.div`
+export const Flex = styled.div<FlexProps> `
     display: flex;
-    flex: ${({ flex }) => flex};
-    justify-content: ${({ justify }) => justify};
+
+    flex: ${(props: { flex: any }) => props.flex};
+    /* justify-content: flex-end; */
+    justify-content: ${(props: {justify: any}) => props.justify};
+
 `
 
-const Header = ({ title }) => {
-    const { site } = useStaticQuery(query)
-    const { defaultTitle, social } = site.siteMetadata
-
-    const header = {
-        title: title || defaultTitle,
-        social: social
-    }
-
+const Index: React.FC<IndexPageProps> = () => {
     return (
         <Nav>
-            <Flex flex={2}>
-                <Link to="/">
-                    <h3>{header.title}</h3>
-                </Link>
-            </Flex>
+            <Flex flex={2}>Kaio Gama</Flex>
             <Flex flex={1} justify="flex-end">
-                {social.map(
-                    (link: {
-                        url: string | undefined
-                        name: {} | null | undefined
-                    }) => (
-                        <a href={link.url} key={link.name}>
-                            {link.name}
-                        </a>
-                    )
-                )}
+                <a href="https://github.com/kaiogama18">Github</a>
+                <a href="https://www.linkedin.com/in/kaiogama/">linkedin</a>
             </Flex>
         </Nav>
     )
 }
 
-export default Header
+export default Index
 
-Header.propTypes = {
-    title: PropTypes.string,
-    social: PropTypes.array
-}
-
-Header.defaultProps = {
-    title: null,
-    social: []
-}
-
-const query = graphql`
-    query Header {
+export const pageQuery = graphql`
+    query IndexQuerys {
         site {
             siteMetadata {
                 defaultTitle: title

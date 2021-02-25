@@ -10,6 +10,7 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-netlify`,
         'gatsby-plugin-scss-typescript',
+        `gatsby-plugin-typescript`,
         {
             resolve: `gatsby-plugin-sitemap`,
             options: {

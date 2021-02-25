@@ -25,6 +25,6 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const Space = styled.div`
-    height: ${({ height }) => height + 'px'};
-    /* height: ${(height: { height: any }) => height}; */
+    /* height: ${({ height }) => height + 'px'}; */
+    height: 10px;
 `

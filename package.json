@@ -7,6 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "lint": "eslint . --ext ts --ext tsx'",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -30,6 +31,7 @@
     "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-plugin-styled-components": "^3.9.0",
+    "gatsby-plugin-typescript": "^2.12.0",
     "gatsby-plugin-typography": "^2.11.0",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-remark": "^2.15.0",
@@ -52,7 +54,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "gatsby-plugin-scss-typescript": "^4.0.13",
     "node-sass": "^5.0.0",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "typescript": "^4.2.2"
   },
   "repository": {
     "type": "git",

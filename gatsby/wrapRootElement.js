@@ -1,7 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Footer, Header, Theme } from '../src/components/index'
+import styled, { ThemeProvider } from 'styled-components'
+import { Footer, Header } from '../src/components/index'
 import { GlobalStyle, Space } from '../src/styles/global'
+import light from '../src/styles/themes/light'
 
 const Layout = styled.body`
     max-width: 960px;
@@ -18,14 +19,16 @@ const Layout = styled.body`
 
 export function wrapRootElement({ element }) {
     return (
-        <Theme>
-            <GlobalStyle />
-            <Layout>
-                <Header />
-                {element}
-                <Space height={30} />
-                <Footer />
-            </Layout>
-        </Theme>
+        <>
+            <ThemeProvider theme={light}>
+                <GlobalStyle />
+                <Layout>
+                    <Header />
+                    {element}
+                    <Space height={30} />
+                    <Footer />
+                </Layout>
+            </ThemeProvider>
+        </>
     )
 }

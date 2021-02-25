@@ -5989,7 +5989,7 @@ gatsby-plugin-styled-components@^3.9.0:
 
 gatsby-plugin-typescript@^2.12.0:
   version "2.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.12.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.12.0.tgz#44df6cfde747ab94c1984621e5bb749da94af959"
   integrity sha512-Gb8mPdIgAmlxb/EgH7h5ewq3nMJ+oU640AyfTCAp9GtQspRztRRKjuGceJH3gDVq8bO6wFOWxdRVYIC2KZF9mw==
   dependencies:
     "@babel/core" "^7.12.3"
@@ -10831,9 +10831,9 @@ rc@^1.2.7, rc@^1.2.8:
     strip-json-comments "~2.0.1"
 
 react-dev-utils@^4.2.3:
-  version "4.2.2"
-  resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-4.2.2.tgz"
-  integrity sha512-HwN0EE+9DS7wB0kKy6Bc5kUTUGUAOyZorJeb+ZGeTrxd1ZNwEJn1TfCRuNpRRa+Iu3VeYBcQ2pjuordJ4eqmfA==
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
+  integrity sha512-uvmkwl5uMexCmC0GUv1XGQP0YjfYePJufGg4YYiukhqk2vN1tQxwWJIBERqhOmSi80cppZg8mZnPP/kOMf1sUQ==
   dependencies:
     address "1.0.3"
     babel-code-frame "6.26.0"
@@ -13112,6 +13112,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.2.tgz#1450f020618f872db0ea17317d16d8da8ddb8c4c"
+  integrity sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
 
 typings-for-css-modules-loader@^1.7.0:
   version "1.7.0"
