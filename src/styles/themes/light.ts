@@ -1,6 +1,6 @@
 export default {
     title: 'light',
-
+    icon: 'dark_mode',
     colors: {
         background: '#f5f5f5',
         text: '#333',

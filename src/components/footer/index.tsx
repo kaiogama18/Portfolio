@@ -2,9 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Footer = styled.footer`
-    margin: auto;
-    padding: 0 1rem;
-    max-width: 960px;
+    margin-top: 3rem;
     text-align: center;
     border-top: 2px solid ${props => props.theme.color};
 
