@@ -9,4 +9,4 @@
 
 
 
-![2021-03-21 21 06 56 www kaiogama com 21bfd75a8159](https://user-images.githubusercontent.com/15802576/111928229-6552a600-8a89-11eb-9a46-ea199a8e48a3.png)
+<!-- ![2021-03-21 21 06 56 www kaiogama com 21bfd75a8159](https://user-images.githubusercontent.com/15802576/111928229-6552a600-8a89-11eb-9a46-ea199a8e48a3.png)
