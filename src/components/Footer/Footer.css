@@ -1,0 +1,16 @@
+footer {
+    box-sizing: border-box;
+    color: var(--text);
+    padding: 1cap;
+}
+
+.footer-links {
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin-bottom: 5cap;
+}
+
+.footer-links a {
+
+    margin: 1cap;
+}
